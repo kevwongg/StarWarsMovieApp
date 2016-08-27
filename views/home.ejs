@@ -11,6 +11,7 @@
 		<div id="posters-wrapper" class="content-padding clearfix">
 			<% for(var i =0 ; i < movies.length; i++){ %>
 			<div class="poster">
+				<a href="/star_wars_episode/<%=movies[i].episode_number %>">
 				<img src ="/images/<%= movies[i].poster %>" class="img-responsive">
 				<div class="poster-info-overlay">
 					<h3><%= movies[i].title %></h3>
